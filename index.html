@@ -1,0 +1,54 @@
+<html>
+<head>
+	<link rel="stylesheet" style = "text/css" href = "index.css">
+	<title> Pendaftaran|Fresh Style </title>
+</head>
+<body>
+	<script src="sumform.js"></script>
+	<div class="container">
+	<div class="result" id="hasil">
+	</div>
+
+		<h2> Form Data Sendiri </h2>
+		<label> Nama Lengkap <label>
+		<input type="text" id="nama" placeholder="cth:Siti Aisyah"><br>
+		<text>Nama Sesuai KTP/Akta Kelahiran</text>
+		<label> Kelas/Tingkatan </label>
+		<input type="text" id="Kelas" placeholder="cth: XII MIPA 3 / 8A / 3 SD"><br>
+		<text>Kelas saat ini atau kelas tujuan</text>
+		<p>
+		<label>Jenis Kelamin</label>
+		<div class="Jenis_Kelamin">
+		<input type="radio" name="gender" value="laki-laki">Laki-laki
+		<input type="radio" name="gender" value="Perempuan">Perempuan
+		<input type="radio" name="gender" value="Lainnya">Lainnya
+		</div>
+		<text>Pilih Salah Satu</text>
+		<p>
+		<label>Ekstrakurikuler yang diminati</label>
+		<div class="Jenis_Kelamin">
+		<input type="Checkbox" name="Extra" value="Basket">Basket
+		<input type="Checkbox" name="Extra" value="Futsal"> Futsal
+		<input type="Checkbox" name="Extra" value="Paduan Suara"> Paduan Suara
+		</div>
+		<text> Boleh pilih lebih dari satu(opsional)</text>
+		
+		<label> Pilih Jadwal Belajar *wajib </label>
+		<div class="Waktu">
+		<input type="radio" name="time" value="Pagi"> Pagi(07:00-12:00）
+		<input type="radio" name="time" value="Siang"> Siang(12:30-17:00）
+		<input type="radio" name="time" value="Sore"> Sore(17:30-20:30）
+		<input type="radio" name="time" value="Campuran"> Campuran(fleksibel)
+		</div>
+		<text> Pilih Salah Satu Jadwal Yang Diinginkan </text><p>
+			<button id="tampilkanBTN">Ok</button>
+			<button id="hapuskanBTN">Clear</button>		
+
+</div>
+
+<div class="result" id="hasil">
+</div>
+<script src="index.js"></script>
+</body>
+</html>
+		
