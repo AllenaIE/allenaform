@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>Home</title>
+<link rel="stylesheet" href="indexstyle.css">
+</head>
+<body>
+
+<header>
+<h1>Merchandise Store</h1>
+<p>Selamat datang, <span id="user"></span> ! ! !</p>
+</header>
+
+<nav>
+<ul>
+<li><a href="index1.html">Home</a></li>
+
+<li>
+<a href="#">Photocard</a>
+<ul>
+<li><a href="menu1.html">PVC</a></li>
+<li><a href="menu1,2.html">HOLDER</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Figurine</a>
+<ul>
+<li><a href="menu2.html">HSR</a></li>
+<li><a href="menu2,2.html">HI3</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Cosplay</a>
+<ul>
+<li><a href="menu3.html">BELI</a></li>
+<li><a href="menu3,2.html">RENTAL</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Merchandise</a>
+<ul>
+<li><a href="menu4.html">KEYCHAIN</a></li>
+<li><a href="menu4,2.html">PIN</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Commission</a> 
+<ul>
+<li><a href="menu5.html">VIDEO</a></li>
+<li><a href="menu5,2.html">POTRAIT</a></li>
+</ul>
+</li>
+<footer>© 2026</footer>
+<li>🛒 <span id="cart">0</span></li>
+</ul>
+</nav>
+<center><h1> Photocard <h1>
+<h3> HOLDER <h3></center>
+<div class="container">
+
+
+<div class="card">
+<img src="digitalholder.webp">
+<h3>Digital Camera</h3>
+<p>Digital Camera Photocard Holder</p>
+<p>Rp 33.000</p>
+<button onclick="beli('Robin')">Beli</button>
+</div>
+
+<div class="card">
+<img src="oshiita.webp">
+<h3>Oshi Ita Bag Photocard</h3>
+<p>Oshi Ita Bag Photocard Holder/Acrylic Charm</p>
+<p>Rp 23.000</p>
+<button onclick="beli('Oshiita')">Beli</button>
+</div>
+
+<div class="card">
+<img src="fishtank.webp">
+<h3>Fish Tank</h3>
+<p>Fish Tank Acrylic Photocard Holder</p>
+<p>Rp 51.000</p>
+<button onclick="beli('FishTank')">Beli</button>
+</div>
+
+<div class="card">
+<img src="lacebow.webp">
+<h3>Double Character Lace Bow</h3>
+<p>Double Character Lace Bow Ribbon Acrylic Standee - PhotoCard Holder Frame</p>
+<p>Rp 16.000</p>
+<button onclick="beli('LaceBow')">Beli</button>
+</div>
+
+<div class="card">
+<img src="animallace.webp">
+<h3>Handmade Animal Lace Photocard Holder</h3>
+<p>Kawaii Card Sleeve 68*92mm, Custom Toploaders, Gift For Collectors</p>
+<p>Rp 51.000</p>
+<button onclick="beli('AnimalLace')">Beli</button>
+</div>
+
+<div class="card">
+<img src="caratholder.webp">
+<h3>Carat Acrylic PC Holder</h3>
+<p>Carat Acrylic PC Holder</p>
+<p>Rp 39.000</p>
+<button onclick="beli('CaratHolder')">Beli</button>
+</div>
+
+
+<script src="indexscript.js"></script>
+
+<script>
+
+let nama = localStorage.getItem("nama");
+if(!nama){
+    window.location.href = "register.html";
+}
+document.getElementById("user").innerText = nama;
+</script>
+
+</body>
+</html>

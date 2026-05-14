@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>Home</title>
+<link rel="stylesheet" href="indexstyle.css">
+</head>
+<body>
+
+<header>
+<h1>Merchandise Store</h1>
+<p>Selamat datang, <span id="user"></span> ! ! !</p>
+</header>
+
+<nav>
+<ul>
+<li><a href="index1.html">Home</a></li>
+
+<li>
+<a href="#">Photocard</a>
+<ul>
+<li><a href="menu1.html">PVC</a></li>
+<li><a href="menu1,2.html">HOLDER</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Figurine</a>
+<ul>
+<li><a href="menu2.html">HSR</a></li>
+<li><a href="menu 2,2.html">HI3</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Cosplay</a>
+<ul>
+<li><a href="menu3.html">BELI</a></li>
+<li><a href="menu 3,2.html">RENTAL</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Merchandise</a>
+<ul>
+<li><a href="menu4.html">KEYCHAIN</a></li>
+<li><a href="menu 4,2.html">PIN</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Commission</a> 
+<ul>
+<li><a href="menu5.html">VIDEO</a></li>
+<li><a href="menu 5,2.html">POTRAIT</a></li>
+</ul>
+</li>
+<footer>© 2026</footer>
+<li>🛒 <span id="cart">0</span></li>
+</ul>
+</nav>
+<center><h1> Figurine <h1>
+<h3> HSR <h3></center>
+<div class="container">
+
+
+<div class="card">
+<img src="chimerafig.AVIF">
+<h3>Chimera</h3>
+<p>HSR Fanmade Chimera! Aventurine DrRatio Figurine</p>
+<p>Rp 290.000</p>
+<button onclick="beli('Chimera')">Beli</button>
+</div>
+
+<div class="card">
+<img src="Sparklefig.webp">
+<h3>Sparkle</h3>
+<p>Sparkle by Neko Figures Garage Kit</p>
+<p>Rp 2.900.000</p>
+<button onclick="beli('Sparkle')">Beli</button>
+</div>
+
+<div class="card">
+<img src="robinfig.webp">
+<h3>Robin</h3>
+<p>Robin (Honkai Star Rail) | Resin Garage Kit | -Fan Art- | Neko Figurines</p>
+<p>Rp 1.496.000</p>
+<button onclick="beli('Robin')">Beli</button>
+</div>
+
+<div class="card">
+<img src="fffig.webp">
+<h3>Firefly</h3>
+<p>Firefly by Neko Figures Garage Kit</p>
+<p>Rp 366.000</p>
+<button onclick="beli('Firefly')">Beli</button>
+</div>
+
+<div class="card">
+<img src="catcakes.webp">
+<h3>Cat Cakes</h3>
+<p>HSR Cat Cake Figures Mystery Bag Random 5PCS/Pack Official Merch</p>
+<p>Rp 603.000</p>
+<button onclick="beli('Catcakes')">Beli</button>
+</div>
+
+<div class="card">
+<img src="numbyfig.webp">
+<h3>Numby</h3>
+<p> Handmade Honkai Star Rail Numby Figurine: Topaz's Companion </p>
+<p>Rp 178.000</p>
+<button onclick="beli('Numby')">Beli</button>
+</div>
+
+
+<script src="indexscript.js"></script>
+
+<script>
+
+let nama = localStorage.getItem("nama");
+if(!nama){
+    window.location.href = "register.html";
+}
+document.getElementById("user").innerText = nama;
+</script>
+
+</body>
+</html>
